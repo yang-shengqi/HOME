@@ -58,7 +58,7 @@
             letter-spacing: 1px;
         }
 
-        /* ===== 顶部品牌区（抬头，保持原样） ===== */
+        /* ===== 顶部品牌区 ===== */
         .brand {
             display: flex;
             align-items: flex-start;
@@ -134,7 +134,7 @@
             margin-top: 4px;
         }
 
-        /* ===== 英文翻译样式（正文中每句中文后紧跟） ===== */
+        /* ===== 英文翻译样式 ===== */
         .en {
             display: block;
             font-size: 0.8em;
@@ -402,7 +402,7 @@
             font-weight: 600;
         }
 
-        /* ===== 表格（每个选项逐词中英对照） ===== */
+        /* ===== 表格 ===== */
         .table-wrap {
             overflow-x: auto;
             margin: 16px 0 20px 0;
@@ -443,7 +443,6 @@
             color: #bace9a;
             width: 28%;
         }
-        /* 表格内英文翻译用斜体小字显示在中文后面 */
         .td-en {
             color: #7a8a6e;
             font-size: 0.85em;
@@ -483,9 +482,7 @@
             color: #e2ead4;
         }
 
-        /* ============================================================ */
-        /* 新增：复利计算器样式（适配本文件风格）                          */
-        /* ============================================================ */
+        /* ===== 复利计算器样式 ===== */
         .calculator-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -576,16 +573,13 @@
             text-align: center;
         }
 
-        /* ============================================================ */
-        /* 响应式                                                       */
-        /* ============================================================ */
+        /* ===== 响应式 ===== */
         @media (max-width: 1024px) {
             .phase-grid {
                 grid-template-columns: 1fr 1fr;
                 gap: 14px;
             }
         }
-
         @media (max-width: 820px) {
             .phase-grid {
                 grid-template-columns: 1fr 1fr;
@@ -595,7 +589,6 @@
                 gap: 14px;
             }
         }
-
         @media (max-width: 768px) {
             body {
                 padding: 14px 8px;
@@ -657,7 +650,6 @@
                 font-size: 20px;
             }
         }
-
         @media (max-width: 600px) {
             .phase-grid {
                 grid-template-columns: 1fr;
@@ -666,7 +658,6 @@
                 grid-template-columns: 1fr;
             }
         }
-
         @media (max-width: 480px) {
             .container {
                 padding: 14px 10px 18px;
@@ -711,7 +702,7 @@
             }
         }
 
-        /* ===== 底部版权区域（严格按照用户提供的文本） ===== */
+        /* ===== 底部版权 ===== */
         .footer {
             margin-top: 48px;
             padding-top: 22px;
@@ -754,7 +745,7 @@
             <span class="badge">杨昕玉 · 未来人生生存战略方案 · 独立思想锚点</span>
         </div>
 
-        <!-- ===== 顶部品牌区（抬头，保持原样） ===== -->
+        <!-- ===== 顶部品牌区 ===== -->
         <div class="brand">
             <div class="brand-left">
                 <div class="sub-brand">YANG XINYU · STRATEGIC SURVIVAL PLAN</div>
@@ -770,7 +761,7 @@
             </div>
         </div>
 
-        <!-- ===== 正文部分：每一句中英文对照 ===== -->
+        <!-- ===== 正文 ===== -->
         <div class="highlight-box">
             <p><strong>这个网站你收藏在微信里，每年生日的时候看一遍，切记！你老爸唯一对你的要求。</strong>
             <span class="en">Bookmark this website in WeChat and read it once every birthday – this is the only request your father has for you.</span></p>
@@ -1088,9 +1079,7 @@
             <span class="en">This is all a father can do – I have done my utmost. The rest is your <strong>own new beginning in life</strong>.</span></p>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- 插入：复利计算器（定投 + 单笔）                                 -->
-        <!-- ============================================================ -->
+        <!-- ===== 复利计算器 ===== -->
         <h2>附：复利计算器 <span class="en-inline">Compound Interest Calculator</span></h2>
         <p style="font-size:15px; color:#8a9a7a; margin-bottom:6px;">
             快速测算定投或单笔投资在复利作用下的终值，辅助你的财富规划。
@@ -1122,7 +1111,7 @@
                     <div class="value" id="resultD">--</div>
                     <div class="detail">
                         总投入：<span id="totalInput">--</span> 港元 &nbsp;|&nbsp; 总收益：<span id="totalProfit">--</span> 港元
-                        <span class="en" style="display:inline; font-size:0.8em; margin-left:4px; color:#5a6a4e;">(Total Input / Total Profit)</span>
+                        <span class="en" style="display:inline; font-size:0.8em; margin-left:4px; color:#5a6a4e;"><br>估算五年的定投境外市场，可以手动修改数值。</span>
                     </div>
                 </div>
             </div>
@@ -1147,12 +1136,11 @@
                     <div class="value" id="resultS">--</div>
                     <div class="detail">
                         总收益：<span id="totalProfitS">--</span> 港元
-                        <span class="en" style="display:inline; font-size:0.8em; margin-left:4px; color:#5a6a4e;">(Total Profit)</span>
+                        <span class="en" style="display:inline; font-size:0.8em; margin-left:4px; color:#5a6a4e;"><br>28岁后的收益复利估算，可以手动修改数值。</span>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- ===== 计算器结束 ===== -->
 
         <h2>九、结语 <span class="en-inline">A Father's Gift</span></h2>
         <p>我在你10岁开始为你铺这条路，迁移户口至大湾区广州，这离香港最近，物理位置又属于南方（火）。
@@ -1170,7 +1158,7 @@
             <span class="en">Whether you listen or not, <strong>when you look back on your 28th birthday, you will naturally understand what all of this means.</strong></span></p>
         </div>
 
-        <!-- ===== 底部版权区域（严格按照用户提供的文本） ===== -->
+        <!-- ===== 底部版权 ===== -->
         <div class="footer">
             <div class="main-line">
                 杨晟琦文明公理系统·独立思考锚点·首发于2026年·本页为公开索引入口
@@ -1184,35 +1172,36 @@
 
     </div>
 
-    <!-- ============================================================ -->
-    <!-- JavaScript：复利计算器                                           -->
-    <!-- ============================================================ -->
+    <!-- ===== 修复后的 JavaScript ===== -->
     <script>
         (function() {
             'use strict';
 
             // 定投复利计算
             function calcDingtou() {
-                var pmt = parseFloat(document.getElementById('pmt').value) || 0;
-                var rate = parseFloat(document.getElementById('rate').value) || 0;
-                var years = parseFloat(document.getElementById('years').value) || 0;
+                var pmt = parseFloat(document.getElementById('pmt').value);
+                var rate = parseFloat(document.getElementById('rate').value);
+                var years = parseFloat(document.getElementById('years').value);
                 var resultEl = document.getElementById('resultD');
                 var totalInputEl = document.getElementById('totalInput');
                 var totalProfitEl = document.getElementById('totalProfit');
 
                 if (!resultEl) return;
 
-                if (pmt <= 0 || rate <= 0 || years <= 0) {
-                    resultEl.textContent = '请填写有效数值';
+                // 修复 NaN 问题
+                if (isNaN(pmt) || pmt <= 0 || isNaN(rate) || rate <= 0 || isNaN(years) || years <= 0) {
+                    resultEl.textContent = '请输入有效正数';
                     if (totalInputEl) totalInputEl.textContent = '--';
                     if (totalProfitEl) totalProfitEl.textContent = '--';
                     return;
                 }
+
                 var r = rate / 100 / 12;
                 var n = years * 12;
                 var fv = pmt * ((Math.pow(1 + r, n) - 1) / r);
                 var totalInput = pmt * n;
                 var totalProfit = fv - totalInput;
+
                 resultEl.textContent = fv.toFixed(2) + ' 港元';
                 if (totalInputEl) totalInputEl.textContent = totalInput.toFixed(2);
                 if (totalProfitEl) totalProfitEl.textContent = totalProfit.toFixed(2);
@@ -1220,26 +1209,28 @@
 
             // 单笔复利计算
             function calcSingle() {
-                var pv = parseFloat(document.getElementById('pv').value) || 0;
-                var rate = parseFloat(document.getElementById('rateS').value) || 0;
-                var years = parseFloat(document.getElementById('yearsS').value) || 0;
+                var pv = parseFloat(document.getElementById('pv').value);
+                var rate = parseFloat(document.getElementById('rateS').value);
+                var years = parseFloat(document.getElementById('yearsS').value);
                 var resultEl = document.getElementById('resultS');
                 var totalProfitEl = document.getElementById('totalProfitS');
 
                 if (!resultEl) return;
 
-                if (pv <= 0 || rate <= 0 || years <= 0) {
-                    resultEl.textContent = '请填写有效数值';
+                if (isNaN(pv) || pv <= 0 || isNaN(rate) || rate <= 0 || isNaN(years) || years <= 0) {
+                    resultEl.textContent = '请输入有效正数';
                     if (totalProfitEl) totalProfitEl.textContent = '--';
                     return;
                 }
+
                 var fv = pv * Math.pow(1 + rate / 100, years);
                 var totalProfit = fv - pv;
+
                 resultEl.textContent = fv.toFixed(2) + ' 港元';
                 if (totalProfitEl) totalProfitEl.textContent = totalProfit.toFixed(2);
             }
 
-            // 绑定输入事件 & 恢复 localStorage 数据
+            // 绑定输入事件 & 恢复 localStorage
             var calcInputs = [
                 { id: 'pmt', fn: calcDingtou },
                 { id: 'rate', fn: calcDingtou },
@@ -1249,13 +1240,9 @@
                 { id: 'yearsS', fn: calcSingle }
             ];
 
-            var hasAnyInput = false;
-
             calcInputs.forEach(function(item) {
                 var el = document.getElementById(item.id);
                 if (el) {
-                    hasAnyInput = true;
-                    // 从 localStorage 恢复
                     var saved = localStorage.getItem('calc_xy_' + item.id);
                     if (saved !== null && saved !== '') {
                         el.value = saved;
@@ -1267,24 +1254,11 @@
                 }
             });
 
-            // 页面加载完成后执行一次计算
-            if (hasAnyInput) {
-                if (document.readyState === 'complete') {
-                    setTimeout(function() {
-                        calcDingtou();
-                        calcSingle();
-                    }, 50);
-                } else {
-                    window.addEventListener('load', function() {
-                        setTimeout(function() {
-                            calcDingtou();
-                            calcSingle();
-                        }, 50);
-                    });
-                }
-            }
+            // 页面加载完成后立即计算一次（直接调用，无需等待事件）
+            calcDingtou();
+            calcSingle();
 
-            console.log('[杨昕玉 · 复利计算器] ✅ 已加载');
+            console.log('[杨昕玉 · 复利计算器] ✅ 已加载（修复版）');
         })();
     </script>
 
