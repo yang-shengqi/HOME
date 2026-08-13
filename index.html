@@ -328,14 +328,30 @@
             color: #e8d06a;
         }
 
-        .phase-card.card-1 { border-left: 4px solid #8aaa6a; }
-        .phase-card.card-2 { border-left: 4px solid #c4a84a; }
-        .phase-card.card-3 { border-left: 4px solid #6a9a8a; }
-        .phase-card.card-4 { border-left: 4px solid #b89a6a; }
-        .phase-card.card-1 .phase-num { background: #8aaa6a; }
-        .phase-card.card-2 .phase-num { background: #c4a84a; }
-        .phase-card.card-3 .phase-num { background: #6a9a8a; }
-        .phase-card.card-4 .phase-num { background: #b89a6a; }
+        .phase-card.card-1 {
+            border-left: 4px solid #8aaa6a;
+        }
+        .phase-card.card-2 {
+            border-left: 4px solid #c4a84a;
+        }
+        .phase-card.card-3 {
+            border-left: 4px solid #6a9a8a;
+        }
+        .phase-card.card-4 {
+            border-left: 4px solid #b89a6a;
+        }
+        .phase-card.card-1 .phase-num {
+            background: #8aaa6a;
+        }
+        .phase-card.card-2 .phase-num {
+            background: #c4a84a;
+        }
+        .phase-card.card-3 .phase-num {
+            background: #6a9a8a;
+        }
+        .phase-card.card-4 .phase-num {
+            background: #b89a6a;
+        }
 
         /* ===== 步骤标签 ===== */
         .step-tags {
@@ -467,40 +483,101 @@
             color: #e2ead4;
         }
 
-        /* ===== 底部版权区域（严格按照用户提供的文本） ===== */
-        .footer {
-            margin-top: 48px;
-            padding-top: 22px;
-            border-top: 2px solid #2a322a;
-            font-size: 14px;
+        /* ============================================================ */
+        /* 新增：复利计算器样式（适配本文件风格）                          */
+        /* ============================================================ */
+        .calculator-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0 16px 0;
+        }
+        .calc-card {
+            background: #1a201c;
+            border: 1px solid #2a322a;
+            border-radius: 16px;
+            padding: 22px 24px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+            transition: border-color 0.2s;
+        }
+        .calc-card:hover {
+            border-color: #4a5a3e;
+        }
+        .calc-card h4 {
+            margin-top: 0;
+            color: #bace9a;
+            border-bottom: 1px solid #2a322a;
+            padding-bottom: 10px;
+            margin-bottom: 18px;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+        }
+        .calc-card .input-group {
+            margin-bottom: 14px;
+        }
+        .calc-card .input-group label {
+            display: block;
+            font-size: 13px;
+            color: #8a9a7a;
+            margin-bottom: 3px;
+            font-weight: 500;
+        }
+        .calc-card .input-group input {
+            width: 100%;
+            padding: 8px 14px;
+            background: #0b0e0c;
+            border: 1px solid #2a322a;
+            border-radius: 8px;
+            color: #d0d6c8;
+            font-size: 16px;
+            font-family: inherit;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .calc-card .input-group input:focus {
+            outline: none;
+            border-color: #8aaa6a;
+            box-shadow: 0 0 0 3px rgba(138, 170, 106, 0.15);
+        }
+        .calc-card .result-box {
+            margin-top: 16px;
+            padding: 14px 18px;
+            background: #111611;
+            border-radius: 10px;
+            border-left: 4px solid #bace9a;
+        }
+        .calc-card .result-box .label {
+            font-size: 12px;
+            color: #7a8a6e;
+            letter-spacing: 0.3px;
+        }
+        .calc-card .result-box .value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #e2ead4;
+            word-break: break-all;
+            margin-top: 2px;
+        }
+        .calc-card .result-box .detail {
+            font-size: 13px;
+            color: #7a8a6e;
+            margin-top: 6px;
+            border-top: 1px solid #242c22;
+            padding-top: 6px;
+        }
+        .calc-card .result-box .detail span {
+            color: #bace9a;
+            font-weight: 600;
+        }
+        .calc-card .footer-note {
+            margin-top: 12px;
+            font-size: 11px;
             color: #5a6a4e;
             text-align: center;
         }
-        .footer .main-line {
-            font-size: 14px;
-            color: #7a8a6e;
-            line-height: 1.8;
-        }
-        .footer .main-line .en {
-            display: block;
-            font-size: 0.9em;
-            color: #5a6a4e;
-            margin-top: 2px;
-        }
-        .footer .cc-line {
-            margin-top: 10px;
-            font-size: 13px;
-            color: #4a5a3e;
-        }
-        .footer .cc-line .en {
-            display: block;
-            font-size: 0.9em;
-            color: #4a5a3e;
-            margin-top: 2px;
-        }
 
         /* ============================================================ */
-        /* 响应式 */
+        /* 响应式                                                       */
         /* ============================================================ */
         @media (max-width: 1024px) {
             .phase-grid {
@@ -512,6 +589,10 @@
         @media (max-width: 820px) {
             .phase-grid {
                 grid-template-columns: 1fr 1fr;
+            }
+            .calculator-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 14px;
             }
         }
 
@@ -545,6 +626,10 @@
             .phase-grid {
                 grid-template-columns: 1fr;
             }
+            .calculator-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
             .designer-note {
                 padding: 16px 18px;
             }
@@ -565,10 +650,19 @@
             td:first-child {
                 width: auto;
             }
+            .calc-card {
+                padding: 16px 16px;
+            }
+            .calc-card .result-box .value {
+                font-size: 20px;
+            }
         }
 
         @media (max-width: 600px) {
             .phase-grid {
+                grid-template-columns: 1fr;
+            }
+            .calculator-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -609,6 +703,44 @@
                 font-size: 12px;
                 padding: 2px 12px;
             }
+            .calc-card {
+                padding: 12px 12px;
+            }
+            .calc-card .result-box .value {
+                font-size: 18px;
+            }
+        }
+
+        /* ===== 底部版权区域（严格按照用户提供的文本） ===== */
+        .footer {
+            margin-top: 48px;
+            padding-top: 22px;
+            border-top: 2px solid #2a322a;
+            font-size: 14px;
+            color: #5a6a4e;
+            text-align: center;
+        }
+        .footer .main-line {
+            font-size: 14px;
+            color: #7a8a6e;
+            line-height: 1.8;
+        }
+        .footer .main-line .en {
+            display: block;
+            font-size: 0.9em;
+            color: #5a6a4e;
+            margin-top: 2px;
+        }
+        .footer .cc-line {
+            margin-top: 10px;
+            font-size: 13px;
+            color: #4a5a3e;
+        }
+        .footer .cc-line .en {
+            display: block;
+            font-size: 0.9em;
+            color: #4a5a3e;
+            margin-top: 2px;
         }
     </style>
 </head>
@@ -774,7 +906,7 @@
             <div class="phase-card card-4">
                 <div class="phase-header">
                     <span class="phase-num">4</span>
-                    <div class="phase-title">28岁–重启人生<span class="sub">Restart Your Life at 28</span></div>
+                    <div class="phase-title">28岁–重启人生<span class="sub">你自己选</span></div>
                 </div>
                 <div class="phase-body">
                     <div class="item">
@@ -956,6 +1088,72 @@
             <span class="en">This is all a father can do – I have done my utmost. The rest is your <strong>own new beginning in life</strong>.</span></p>
         </div>
 
+        <!-- ============================================================ -->
+        <!-- 插入：复利计算器（定投 + 单笔）                                 -->
+        <!-- ============================================================ -->
+        <h2>附：复利计算器 <span class="en-inline">Compound Interest Calculator</span></h2>
+        <p style="font-size:15px; color:#8a9a7a; margin-bottom:6px;">
+            快速测算定投或单笔投资在复利作用下的终值，辅助你的财富规划。
+            <span class="en">Quickly calculate the future value of fixed-investment or lump-sum investment under compound interest, to assist your wealth planning.</span>
+        </p>
+        <p style="font-size:14px; color:#7a8a6e; margin-bottom:16px;">
+            💡 调整任意参数，结果自动更新。定投按月度复利，单笔按年复利。年化收益率请根据自身风险承受能力合理设定。
+            <span class="en">Adjust any parameter and the result updates automatically. Monthly compounding for fixed investment, annual compounding for lump-sum. Set the annual return rate reasonably according to your risk tolerance.</span>
+        </p>
+
+        <div class="calculator-grid">
+            <!-- 定投复利计算器 -->
+            <div class="calc-card">
+                <h4>📈 定投复利计算器 <span style="font-size:0.6em; font-weight:400; color:#7a8a6e;">Fixed Investment</span></h4>
+                <div class="input-group">
+                    <label for="pmt">每月定投金额（港元） <span class="td-en">Monthly Investment (HKD)</span></label>
+                    <input type="number" id="pmt" value="17000" step="100" min="0" />
+                </div>
+                <div class="input-group">
+                    <label for="rate">年化收益率（%） <span class="td-en">Annual Return (%)</span></label>
+                    <input type="number" id="rate" value="7" step="0.5" min="0" max="30" />
+                </div>
+                <div class="input-group">
+                    <label for="years">定投年数 <span class="td-en">Investment Years</span></label>
+                    <input type="number" id="years" value="5" step="1" min="1" max="100" />
+                </div>
+                <div class="result-box">
+                    <div class="label">📌 期末总资产 <span class="td-en">Final Total Assets</span></div>
+                    <div class="value" id="resultD">--</div>
+                    <div class="detail">
+                        总投入：<span id="totalInput">--</span> 港元 &nbsp;|&nbsp; 总收益：<span id="totalProfit">--</span> 港元
+                        <span class="en" style="display:inline; font-size:0.8em; margin-left:4px; color:#5a6a4e;">(Total Input / Total Profit)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 单笔复利计算器 -->
+            <div class="calc-card">
+                <h4>💰 单笔复利计算器 <span style="font-size:0.6em; font-weight:400; color:#7a8a6e;">Lump-Sum Investment</span></h4>
+                <div class="input-group">
+                    <label for="pv">初始本金（港元） <span class="td-en">Initial Principal (HKD)</span></label>
+                    <input type="number" id="pv" value="1000000" step="10000" min="0" />
+                </div>
+                <div class="input-group">
+                    <label for="rateS">年化收益率（%） <span class="td-en">Annual Return (%)</span></label>
+                    <input type="number" id="rateS" value="7" step="0.5" min="0" max="30" />
+                </div>
+                <div class="input-group">
+                    <label for="yearsS">持有年数 <span class="td-en">Holding Years</span></label>
+                    <input type="number" id="yearsS" value="5" step="1" min="1" max="100" />
+                </div>
+                <div class="result-box">
+                    <div class="label">📌 期末总资产 <span class="td-en">Final Total Assets</span></div>
+                    <div class="value" id="resultS">--</div>
+                    <div class="detail">
+                        总收益：<span id="totalProfitS">--</span> 港元
+                        <span class="en" style="display:inline; font-size:0.8em; margin-left:4px; color:#5a6a4e;">(Total Profit)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ===== 计算器结束 ===== -->
+
         <h2>九、结语 <span class="en-inline">A Father's Gift</span></h2>
         <p>我在你10岁开始为你铺这条路，迁移户口至大湾区广州，这离香港最近，物理位置又属于南方（火）。
         <span class="en">I started paving this path for you when you were 10, moving your household registration to Guangzhou in the Greater Bay Area – the closest to Hong Kong, and geographically in the south (Fire element).</span></p>
@@ -985,6 +1183,110 @@
         </div>
 
     </div>
+
+    <!-- ============================================================ -->
+    <!-- JavaScript：复利计算器                                           -->
+    <!-- ============================================================ -->
+    <script>
+        (function() {
+            'use strict';
+
+            // 定投复利计算
+            function calcDingtou() {
+                var pmt = parseFloat(document.getElementById('pmt').value) || 0;
+                var rate = parseFloat(document.getElementById('rate').value) || 0;
+                var years = parseFloat(document.getElementById('years').value) || 0;
+                var resultEl = document.getElementById('resultD');
+                var totalInputEl = document.getElementById('totalInput');
+                var totalProfitEl = document.getElementById('totalProfit');
+
+                if (!resultEl) return;
+
+                if (pmt <= 0 || rate <= 0 || years <= 0) {
+                    resultEl.textContent = '请填写有效数值';
+                    if (totalInputEl) totalInputEl.textContent = '--';
+                    if (totalProfitEl) totalProfitEl.textContent = '--';
+                    return;
+                }
+                var r = rate / 100 / 12;
+                var n = years * 12;
+                var fv = pmt * ((Math.pow(1 + r, n) - 1) / r);
+                var totalInput = pmt * n;
+                var totalProfit = fv - totalInput;
+                resultEl.textContent = fv.toFixed(2) + ' 港元';
+                if (totalInputEl) totalInputEl.textContent = totalInput.toFixed(2);
+                if (totalProfitEl) totalProfitEl.textContent = totalProfit.toFixed(2);
+            }
+
+            // 单笔复利计算
+            function calcSingle() {
+                var pv = parseFloat(document.getElementById('pv').value) || 0;
+                var rate = parseFloat(document.getElementById('rateS').value) || 0;
+                var years = parseFloat(document.getElementById('yearsS').value) || 0;
+                var resultEl = document.getElementById('resultS');
+                var totalProfitEl = document.getElementById('totalProfitS');
+
+                if (!resultEl) return;
+
+                if (pv <= 0 || rate <= 0 || years <= 0) {
+                    resultEl.textContent = '请填写有效数值';
+                    if (totalProfitEl) totalProfitEl.textContent = '--';
+                    return;
+                }
+                var fv = pv * Math.pow(1 + rate / 100, years);
+                var totalProfit = fv - pv;
+                resultEl.textContent = fv.toFixed(2) + ' 港元';
+                if (totalProfitEl) totalProfitEl.textContent = totalProfit.toFixed(2);
+            }
+
+            // 绑定输入事件 & 恢复 localStorage 数据
+            var calcInputs = [
+                { id: 'pmt', fn: calcDingtou },
+                { id: 'rate', fn: calcDingtou },
+                { id: 'years', fn: calcDingtou },
+                { id: 'pv', fn: calcSingle },
+                { id: 'rateS', fn: calcSingle },
+                { id: 'yearsS', fn: calcSingle }
+            ];
+
+            var hasAnyInput = false;
+
+            calcInputs.forEach(function(item) {
+                var el = document.getElementById(item.id);
+                if (el) {
+                    hasAnyInput = true;
+                    // 从 localStorage 恢复
+                    var saved = localStorage.getItem('calc_xy_' + item.id);
+                    if (saved !== null && saved !== '') {
+                        el.value = saved;
+                    }
+                    el.addEventListener('input', function() {
+                        localStorage.setItem('calc_xy_' + item.id, this.value);
+                        item.fn();
+                    });
+                }
+            });
+
+            // 页面加载完成后执行一次计算
+            if (hasAnyInput) {
+                if (document.readyState === 'complete') {
+                    setTimeout(function() {
+                        calcDingtou();
+                        calcSingle();
+                    }, 50);
+                } else {
+                    window.addEventListener('load', function() {
+                        setTimeout(function() {
+                            calcDingtou();
+                            calcSingle();
+                        }, 50);
+                    });
+                }
+            }
+
+            console.log('[杨昕玉 · 复利计算器] ✅ 已加载');
+        })();
+    </script>
 
 </body>
 </html>
