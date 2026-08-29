@@ -754,9 +754,14 @@
                     <span class="tag">学英语 · 学金融 · 出国 · 工作</span>
                 </div>
                 <div class="info-row">
+                    <span>书写人：杨晟琦</span>                    
                     <span>ORCID: <a href="https://orcid.org/0009-0008-3755-8960" target="_blank">0009-0008-3755-8960</a></span>
-                    <span>书写人：杨晟琦</span>
                     <span>日期：2026年7月3日</span>
+                    <span class="counter-label">本系统已运行 </span>
+                    <span id="daysCount">--</span><span class="counter-unit"> 天 </span>
+                    <span id="hoursCount">00</span><span class="counter-unit">:</span>
+                    <span id="minutesCount">00</span><span class="counter-unit">:</span>
+                    <span id="secondsCount">00</span>
                 </div>
             </div>
         </div>
@@ -1563,6 +1568,30 @@
             console.log('✅ 倒计时·2035 插件 (卡片底部外边距30px) 已加载');
         })();
     </script>
+<script>
+(function() {
+    const birthDate = new Date(2026, 6, 3); // 2026年6月3日
 
+    function updateCounter() {
+        const now = new Date();
+        let diff = now.getTime() - birthDate.getTime();
+        if (diff < 0) diff = 0;
+
+        const totalSeconds = Math.floor(diff / 1000);
+        const days = Math.floor(totalSeconds / 86400);
+        const hours = String(Math.floor((totalSeconds % 86400) / 3600)).padStart(2, '0');
+        const minutes = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, '0');
+        const seconds = String(totalSeconds % 60).padStart(2, '0');
+
+        document.getElementById('daysCount').textContent = days;
+        document.getElementById('hoursCount').textContent = hours;
+        document.getElementById('minutesCount').textContent = minutes;
+        document.getElementById('secondsCount').textContent = seconds;
+    }
+
+    updateCounter();
+    setInterval(updateCounter, 1000);
+})();
+</script>
 </body>
 </html>
