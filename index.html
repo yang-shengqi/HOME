@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow, nosnippet, noarchive">    
+    <meta name="robots" content="noindex, nofollow, nosnippet, noarchive">
     <script async src="https://019fdc74-a00d-7cd2-8a0a-f934636d71de.spst2.com/ustat.js"></script>
     <title>杨昕玉：你父亲给你未来的人生生存战略方案</title>
     <style>
@@ -458,6 +458,62 @@
             .en { font-size: 0.7em; }
             .td-en { font-size: 0.75em; }
         }
+
+        /* ----- 货币卡片样式（从《乱世生存与财富自由的实战宝典》移植） ----- */
+        .currency-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            margin: 12px 0 16px 0;
+        }
+        .currency-item {
+            background: var(--bg-card);
+            border-radius: 6px;
+            padding: 10px 6px;
+            border: 1px solid var(--border-color);
+            text-align: center;
+            transition: border-color 0.3s, transform 0.2s;
+        }
+        .currency-item:hover {
+            border-color: var(--border-light);
+            transform: translateY(-2px);
+        }
+        .currency-item .code {
+            font-weight: 600;
+            font-size: 15px;
+            color: var(--text-h1, #e2ead4);
+            letter-spacing: 0.5px;
+        }
+        .currency-item .pct {
+            font-size: 12px;
+            color: var(--color-primary, #8aaa6a);
+            font-weight: 500;
+        }
+        .currency-item .bar {
+            width: 100%;
+            height: 3px;
+            background: var(--border-color);
+            border-radius: 2px;
+            margin-top: 4px;
+            overflow: hidden;
+        }
+        .currency-item .bar .fill {
+            height: 100%;
+            background: var(--color-primary, #8aaa6a);
+            border-radius: 2px;
+        }
+        .currency-item .name {
+            font-size: 10px;
+            color: var(--text-muted);
+            margin-top: 2px;
+            letter-spacing: 0.3px;
+        }
+        .currency-item .name .en {
+            display: block;
+            font-size: 8px;
+            color: var(--text-muted);
+            letter-spacing: 0.3px;
+        }
     </style>
 </head>
 <body>
@@ -669,11 +725,9 @@
         </div>
     </section>
 
-    <!-- 分摊风险 -->
+    <!-- 分摊风险 + 插入的货币卡片 -->
     <section>
-        <h2>四、警告：如何分摊风险 <span class="en-inline">Warning: How to Share Risk</span></h2>
-        <p>核心逻辑：全球化、分散化、多币种化、去中心化的资产拓扑结构，是唯一分摊风险的策略。
-            <span class="en">Core logic: A globally distributed, decentralized, multi-currency, and non-centralized asset topology is the only strategy for risk diversification.</span></p>
+        <h2>四、警告：单一结构系统的脆弱性<span class="en-inline">Warning: The Fragility of a Single-Structure System</span></h2>
         <p>单一法币 + 单一市场 + 单一配置，构成一个三元共振的脆弱系统。
             <span class="en">A single legal currency, a single market, and a single allocation constitute a fragile system of ternary resonance.</span></p>
         <p>当危机来临，汇率贬值、市场崩盘、资产缩值往往不是先后发生，而是同时爆发并相互强化。
@@ -688,9 +742,85 @@
         </div>
     </section>
 
+        <h2>五、反脆弱体系：最佳货币篮子组合 <span class="en-inline">V. Anti-Fragile System: The Optimal Currency Basket Portfolio</span></h2>
+        <p>核心逻辑：全球化、分散化、多币种化、去中心化的资产拓扑结构，是唯一分摊风险的策略。
+            <span class="en">Core logic: A globally distributed, decentralized, multi-currency, and non-centralized asset topology is the only strategy for risk diversification.</span></p>
+        <div class="currency-grid">
+            <div class="currency-item">
+                <div class="code">USD</div>
+                <div class="pct">30-40%</div>
+                <div class="bar"><div class="fill" style="width:100%;"></div></div>
+                <div class="name">美元 · 储备核心 <span class="en">Reserve Core</span></div>
+            </div>
+            <div class="currency-item">
+                <div class="code">EUR</div>
+                <div class="pct">20%</div>
+                <div class="bar"><div class="fill" style="width:57%;"></div></div>
+                <div class="name">欧元 · 区域霸主 <span class="en">Regional Leader</span></div>
+            </div>
+            <div class="currency-item">
+                <div class="code">JPY</div>
+                <div class="pct">15%</div>
+                <div class="bar"><div class="fill" style="width:43%;"></div></div>
+                <div class="name">日元 · 套利避险 <span class="en">Carry & Safe Haven</span></div>
+            </div>
+            <div class="currency-item">
+                <div class="code">CHF</div>
+                <div class="pct">10%</div>
+                <div class="bar"><div class="fill" style="width:29%;"></div></div>
+                <div class="name">瑞郎 · 绝对避险 <span class="en">Ultimate Safe Haven</span></div>
+            </div>
+            <div class="currency-item">
+                <div class="code">GBP</div>
+                <div class="pct">5%</div>
+                <div class="bar"><div class="fill" style="width:14%;"></div></div>
+                <div class="name">英镑 · 风险敏感 <span class="en">Risk-Sensitive</span></div>
+            </div>
+            <div class="currency-item">
+                <div class="code">CAD</div>
+                <div class="pct">5%</div>
+                <div class="bar"><div class="fill" style="width:14%;"></div></div>
+                <div class="name">加元 · 商品货币 <span class="en">Commodity Currency</span></div>
+            </div>
+            <div class="currency-item">
+                <div class="code">AUD</div>
+                <div class="pct">5%</div>
+                <div class="bar"><div class="fill" style="width:14%;"></div></div>
+                <div class="name">澳元 · 商品货币 <span class="en">Commodity Currency</span></div>
+            </div>
+            <div class="currency-item">
+                <div class="code">SGD</div>
+                <div class="pct">5%</div>
+                <div class="bar"><div class="fill" style="width:14%;"></div></div>
+                <div class="name">新加坡元 · 稳健 <span class="en">Stable</span></div>
+            </div>
+            <div class="currency-item">
+                <div class="code">CNY</div>
+                <div class="pct">5%</div>
+                <div class="bar"><div class="fill" style="width:14%;"></div></div>
+                <div class="name">人民币 · 政策驱动 <span class="en">Policy-Driven</span></div>
+            </div>
+            <div class="currency-item" style="border-color:var(--border-color);">
+                <div class="code" style="color:var(--text-muted);">HKD</div>
+                <div class="pct" style="color:var(--text-muted);">—</div>
+                <div class="bar"><div class="fill" style="width:0%;"></div></div>
+                <div class="name" style="color:var(--text-muted);">港元（并入美元） <span class="en">HKD (Pegged to USD)</span></div>
+            </div>
+        </div>
+        <!-- ========== 插入结束 ========== -->
+
+        <div class="highlight-box">
+
+
+        <p>💡 美元锚定价值，瑞郎日元避险，商品货币博取收益。<strong style="color:var(--accent-green);">用"大数定律"对抗"汇率黑天鹅"和对冲"单一法币风险"。</strong>
+            <span class="en">The dollar anchors value, the Swiss franc and yen provide refuge, commodity currencies capture upside. Use the "law of large numbers" against "currency black swans" and hedge against "single fiat currency risk."</span>
+        </p>
+        </div>
+    </section>
+
     <!-- 四阶段执行表（中文原文不动，只改了一处“工作签证”和“三语”表述，但您原文是“粤语、三语能力”，我没动，只改“打工”为“工作”） -->
     <section>
-        <h2>五、我给你的路 <span class="en-inline">The path I give you</span></h2>
+        <h2>六、我给你的路 <span class="en-inline">The path I give you</span></h2>
             <p>四阶段执行表：
             <span class="en">Four-Stage Execution Table:</span></p>
         <div class="table-wrap hover-table">
@@ -752,7 +882,7 @@
 
     <!-- 自由对比表（修正：英文翻译对应中文，补充维度英文标签） -->
     <section>
-        <h2>六、“随时可以说不”是所有自由的基础 <span class="en-inline">Freedom is the Right to Say No</span></h2>
+        <h2>七、“随时可以说不”是所有自由的基础 <span class="en-inline">Freedom is the Right to Say No</span></h2>
             <p>自由是文明的前提，规则是自由的边界，而规则的唯一合法性来自公平、公正、公开。
             <span class="en">Freedom is the premise of civilization; rules are the boundaries of freedom. The only legitimacy of rules comes from fairness, justice, and openness.</span></p>
         <div class="table-wrap hover-table">
@@ -796,7 +926,7 @@
 
     <!-- 合法性表（修正“打工”为“工作”） -->
     <section>
-        <h2>七、“合法”这两个字，比什么都重要 <span class="en-inline">Legality Equals Security</span></h2>
+        <h2>八、“合法”这两个字，比什么都重要 <span class="en-inline">Legality Equals Security</span></h2>
             <p>你的钱在香港<strong>普通法体系下受到保护</strong>，你的身份有合法签证支撑，你的<strong>未来有一条清晰可追溯的轨迹</strong>。
                 <span class="en">Your money is <strong>protected under Hong Kong's common law system</strong>, your identity is supported by a legal visa, and your <strong>future has a clear and traceable trajectory</strong>.</span></p>
         <div class="table-wrap hover-table">
@@ -824,7 +954,7 @@
 
     <!-- 选择矩阵（修正“地理”英文） -->
     <section>
-        <h2>八、未来太多选择，这才是“重启”的真正含义 <span class="en-inline">A Wealth of Choices: The True Meaning of "Restart"</span></h2>
+        <h2>九、未来太多选择，这才是“重启”的真正含义 <span class="en-inline">A Wealth of Choices: The True Meaning of "Restart"</span></h2>
             <p>你不需要在28岁就决定“这辈子干什么”；你可以试错，可以绕路，可以停下来。
                 <span class="en">You don't need to decide "what to do with your life" at 28; you can experiment, take detours, and pause.</span></p>
             <p>因为你的被动收入在持续产生现金流，你的本金在持续复利增长，你的身份在持续有效。
@@ -854,7 +984,7 @@
 
     <!-- 自由特权（步骤标签） -->
     <section>
-        <h2>九、这种自由，是内地99%的人一辈子都得不到的 <span class="en-inline">The Privilege of the 1%</span></h2>
+        <h2>十、这种自由，是内地99%的人一辈子都得不到的 <span class="en-inline">The Privilege of the 1%</span></h2>
             <p><strong>你只需要：</strong><span class="en">All you need to do is:</span></p>
             <div class="step-tags">
                 <span class="tag"><span class="num">1</span> 毕业去办证 <span class="td-en">Get documents ready after graduation</span></span>
@@ -871,7 +1001,7 @@
 
     <!-- 原则 -->
     <section>
-        <h2>十、我的看法 <span class="en-inline">My View</span></h2>
+        <h2>十一、我的看法 <span class="en-inline">My View</span></h2>
             <p>就业、薪资、福利、保障、晋升通道、养老、医疗、住房、死亡补助。<span class="en">Employment, salary, benefits, social security, promotion pathways, pensions, healthcare, housing, and death benefits.</span></p>
             <p>你可以用"体制内VS体制外的差距"这九个结构去问AI，问完你就明白我之前说的"结构性锁死"是什么意思了。<span class="en">You can ask AI using the phrase “inside vs outside the system”, and after that, you’ll understand what I meant earlier by “structural lock‑in”.</span></p>
         <div class="highlight-box">
@@ -882,7 +1012,7 @@
 
     <!-- 最终资产表（修正要素3英文，增加三元共振解释） -->
     <section>
-        <h2>十一、我最终想给你的东西 <span class="en-inline">What I Want to Give You</span></h2>
+        <h2>十二、我最终想给你的东西 <span class="en-inline">What I Want to Give You</span></h2>
             <p>一位中国父亲已经在认知阶层做到了极致，剩下的是你<strong>自己的人生新起点。
                 <span class="en">A Chinese father has reached the pinnacle in the realm of cognition; what remains is your <strong>own new starting point in life</strong>.</p>
         <div class="table-wrap hover-table">
@@ -914,7 +1044,7 @@
 
     <!-- 复利计算器（恢复原预设10年） -->
     <section>
-        <h2>十二：复利计算器 <span class="en-inline">Compound Interest Calculator</span></h2>
+        <h2>十三：复利计算器 <span class="en-inline">Compound Interest Calculator</span></h2>
         <p>快速测算定投或单笔投资在复利作用下的终值，辅助你的财富规划。
             <span class="en">Quickly calculate the future value of fixed-investment or lump-sum investment under compound interest, to assist your wealth planning.</span></p>
 
@@ -978,7 +1108,7 @@
 
     <!-- 结语 -->
     <section>
-        <h2>十三、结语 <span class="en-inline">A Father's Gift</span></h2>
+        <h2>结语 <span class="en-inline">A Father's Gift</span></h2>
         <p>我在你10岁开始为你铺这条路，迁移户口至大湾区广州，这离香港最近，物理位置又属于南方（火）。
             <span class="en">I started paving this path for you when you were 10, moving your household registration to Guangzhou in the Greater Bay Area – the closest to Hong Kong, and geographically in the south (Fire element).</span></p>
         <p>我只做了一件事：在你16岁的时候，替你把“自由”放在一个你伸手就能够到的地方。（此信）
