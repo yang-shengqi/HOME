@@ -29,6 +29,9 @@
             --accent-red: #b84a4a;
             --font-family: "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
             --line-height: 1.8;
+            /* 补充缺失变量（修复货币卡片样式） */
+            --text-h1: #e2ead4;
+            --color-primary: #8aaa6a;
         }
 
         /* ----- 重置 ----- */
@@ -556,14 +559,16 @@
          ============================================================ -->
 
     <!-- 设计者自述 -->
+    <section>
         <h2>写在前面的话 <span class="en-inline">A Few Words at the Beginning</span></h2>
-    <section class="highlight-box">
-        <p>我在为你铺一条可以合法、安全、体面地退出国内系统的路。
-            <span class="en">I am paving for you a path to exit the domestic system legally, safely, and with dignity.</span></p>
-        <p>不依赖婚姻，不依赖体制，不依赖任何人施舍。
-            <span class="en">It does not depend on marriage, on the establishment, or on anyone's charity.</span></p>
-        <p>28岁的时候就能拥有每年7万港元的被动收入，你可以重启你的所有梦想！
-            <span class="en">By the age of 28, with an annual passive income of HKD 70,000, you can restart all your dreams!</span></p>
+        <div class="highlight-box">
+            <p>我在为你铺一条可以合法、安全、体面地退出国内系统的路。
+                <span class="en">I am paving for you a path to exit the domestic system legally, safely, and with dignity.</span></p>
+            <p>不依赖婚姻，不依赖体制，不依赖任何人施舍。
+                <span class="en">It does not depend on marriage, on the establishment, or on anyone's charity.</span></p>
+            <p>28岁的时候就能拥有每年7万港元的被动收入，你可以重启你的所有梦想！
+                <span class="en">By the age of 28, with an annual passive income of HKD 70,000, you can restart all your dreams!</span></p>
+        </div>
     </section>
 
     <!-- 核心判断 -->
@@ -632,14 +637,14 @@
                 <tbody>
                     <tr>
                         <td><strong>政府权力约束</strong><br><span style="font-size:0.75em;color:#7a8a6e;">Constraints on Gov. Powers</span></td>
-                        <td style="color:#d47a6a;"><strong>0.32</td>
-                        <td style="color:#8aaa6a;"><strong>0.56</td>
+                        <td style="color:#d47a6a;"><strong>0.32</strong></td>
+                        <td style="color:#8aaa6a;"><strong>0.56</strong></td>
                         <td>香港领先 <strong style="color:#bace9a;">75%</strong>（0.56 ÷ 0.32）。内地权力制衡机制薄弱，政策易受个人意志影响，存在“朝令夕改”风险。你未来的资产如果留在内地，可能因一纸文件而缩水；香港普通法下，政府行为受司法制约，政策可预期性更高。</td>
                     </tr>
                     <tr>
                         <td><strong>廉洁程度</strong><br><span style="font-size:0.75em;color:#7a8a6e;">Absence of Corruption</span></td>
-                        <td style="color:#d47a6a;"><strong>0.54</td>
-                        <td style="color:#8aaa6a;"><strong>0.84</td>
+                        <td style="color:#d47a6a;"><strong>0.54</strong></td>
+                        <td style="color:#8aaa6a;"><strong>0.84</strong></td>
                         <td>香港领先 <strong style="color:#bace9a;">55.6%</strong>（0.84 ÷ 0.54）。内地腐败风险意味着“灰色支出”是隐性成本，商业运营需额外支付关系维护费用；香港廉政公署（ICAC）的独立执法权使其廉洁度在全球前列，你的合法收入不会因“潜规则”被侵蚀。</td>
                     </tr>
                     <tr>
@@ -689,7 +694,7 @@
                 <span class="en">The largest gaps are in "Fundamental Rights" (+136%) and "Constraints on Gov. Powers" (+75%) — these are exactly the institutional roots of asset insecurity in the mainland. Hong Kong's common law system is the "institutional firewall" for your future financial safety, personal freedom, and contract enforcement.</span>
             </p>
         </div>
-
+    </section>
 
     <!-- 自由对比表（修正：英文翻译对应中文，补充维度英文标签） -->
     <section>
@@ -721,7 +726,7 @@
         </div>
         <div class="highlight-box">
             <p>💡 英语是世界上官方语言覆盖国家最多的语言，也是全球覆盖国家最多的语言，在地球142个国家种，英语被列入国民教育体系的必修科目。</strong>
-                <span class="en">English is the language with the widest official coverage among countries in the world, and also the most globally distributed language. In 142 countries worldwide, English is a compulsory subject in the national education system.</p>
+                <span class="en">English is the language with the widest official coverage among countries in the world, and also the most globally distributed language. In 142 countries worldwide, English is a compulsory subject in the national education system.</span></p>
         </div>
     </section>
 
@@ -1014,7 +1019,7 @@
     <section>
         <h2>十二、我最终想给你的东西 <span class="en-inline">What I Want to Give You</span></h2>
             <p>一位中国父亲已经在认知阶层做到了极致，剩下的是你<strong>自己的人生新起点。</strong>
-                <span class="en">A Chinese father has reached the pinnacle in the realm of cognition; what remains is your <strong>own new starting point in life</strong>.</p>
+                <span class="en">A Chinese father has reached the pinnacle in the realm of cognition; what remains is your <strong>own new starting point in life</strong>.</span></p>
         <div class="table-wrap hover-table">
             <table>
                 <thead>
@@ -1063,7 +1068,7 @@
                 </tbody>
             </table>
         </div>
-            <p> <strong>重要提示： </strong>2026年5月22日 ~ 2026年7月24日 内地多部委联合香港金管局对内地居民及实体在境外的金融资产、账户、证券投资、对外投资及离岸信托收益实行全面封锁。<span class="en"> <strong>Important Notice:  </strong>From May 22, 2026 to July 24, 2026, multiple mainland Chinese ministries and commissions, in coordination with the Hong Kong Monetary Authority (HKMA), will impose comprehensive restrictions on the overseas financial assets, accounts, securities investments, outbound investments, and offshore trust income of mainland residents and entities.</p>
+            <p> <strong>重要提示： </strong>2026年5月22日 ~ 2026年7月24日 内地多部委联合香港金管局对内地居民及实体在境外的金融资产、账户、证券投资、对外投资及离岸信托收益实行全面封锁。<span class="en"> <strong>Important Notice:  </strong>From May 22, 2026 to July 24, 2026, multiple mainland Chinese ministries and commissions, in coordination with the Hong Kong Monetary Authority (HKMA), will impose comprehensive restrictions on the overseas financial assets, accounts, securities investments, outbound investments, and offshore trust income of mainland residents and entities.</span></p>
         <div class="table-wrap hover-table">
             <table>
                 <thead>
@@ -1385,29 +1390,6 @@
             customElements.define('countdown-2035', Countdown2035);
         }
         console.log('✅ 正计时组件已加载');
-    })();
-</script>
-
-<!-- 顶部导航正计时 -->
-<script>
-    (function() {
-        const birthDate = new Date(2026, 6, 3);
-        function updateCounter() {
-            const now = new Date();
-            let diff = now.getTime() - birthDate.getTime();
-            if (diff < 0) diff = 0;
-            const totalSeconds = Math.floor(diff / 1000);
-            const days = Math.floor(totalSeconds / 86400);
-            const hours = String(Math.floor((totalSeconds % 86400) / 3600)).padStart(2,'0');
-            const minutes = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2,'0');
-            const seconds = String(totalSeconds % 60).padStart(2,'0');
-            document.getElementById('daysCount').textContent = days;
-            document.getElementById('hoursCount').textContent = hours;
-            document.getElementById('minutesCount').textContent = minutes;
-            document.getElementById('secondsCount').textContent = seconds;
-        }
-        updateCounter();
-        setInterval(updateCounter, 1000);
     })();
 </script>
 
